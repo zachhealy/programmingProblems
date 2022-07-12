@@ -22,10 +22,10 @@ Given a roman numeral, convert it to an integer
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        total = 0
         n = len(s)
-        
         list = {'I' : 1, 'V' : 5, 'X' : 10, 'L' : 50, 'C' : 100, 'D' : 500, 'M' : 1000}
+        
+        total = list[s[n - 1]]
         
         for i in range(n - 2, -1, -1):
             if list[s[i]] >= list[s[i+1]]:
@@ -33,5 +33,4 @@ class Solution:
             else:
                 total = total - list[s[i]]
             
-        total = total + 1
-        return total
+        return abs(total)
