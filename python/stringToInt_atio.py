@@ -65,22 +65,32 @@ s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+
 
 class Solution:
     def myAtoi(self, s: str) -> int:
-        s.strip()
+        s = s.strip()
+
         if len(s) == 0:
             return 0
         
-        for i in range(0, len(s), 1):
-            if s[i].isdigit() or s[i] == '-':
-                st = st + s[i]
-            if s[i].isalpha() or s[i] == '.':
-                if st.isdigit():
-                    return st
-                else:
-                    return 0
+        x = 0
+        temp = 0
+        if s[0] == '-':
+            temp = 1
+        if s[0] == '+':
+            temp = 2
                 
-        if int(st) > 2147483647:
-            st = 2147483647
-        if int(st) < -2147483647:
-            st = -2147483648
+        for i in range(0, len(s), 1):
+            if i == 0 and temp > 0:
+                continue
+            if s[i].isdigit():
+                x = x * 10 + ord(s[i]) - 48
+            else:
+                break
         
-        return st
+        if temp == 1:
+            x = -x
+            
+        if x > 2147483647:
+            x = 2147483647
+        if x < -2147483647:
+            x = -2147483648
+        
+        return x
