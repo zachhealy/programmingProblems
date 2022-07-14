@@ -1,4 +1,4 @@
-""""
+'''
 4. Median of Two Sorted Arrays
 
 Difficulty: Hard
@@ -23,7 +23,7 @@ nums2.length == n
 0 <= n <= 1000
 1 <= m + n <= 2000
 -10^6 <= nums1[i], nums2[i] <= 10^6
-""""
+'''
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:

@@ -1,4 +1,4 @@
-''''
+'''
 1480. Running Sum of 1d Array
 
 Difficulty: Easy
@@ -24,7 +24,7 @@ Constraints:
 1 <= nums.length <= 1000
 -10^6 <= nums[i] <= 10^6
 
-''''
+'''
 class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         run = []

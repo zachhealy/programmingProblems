@@ -1,4 +1,4 @@
-''''
+'''
 8. String to Integer (atoi)
 
 Difficulty: Medium
@@ -61,7 +61,7 @@ Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 Constraints:
 0 <= s.length <= 200
 s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
-''''
+'''
 
 class Solution:
     def myAtoi(self, s: str) -> int:

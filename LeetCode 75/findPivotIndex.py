@@ -1,4 +1,4 @@
-''''
+'''
 724. Find Pivot Index
 
 Difficulty: Easy
@@ -34,7 +34,7 @@ Constraints:
 1 <= nums.length <= 104
 -1000 <= nums[i] <= 1000
 
-''''
+'''
 
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:

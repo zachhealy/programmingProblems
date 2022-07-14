@@ -1,4 +1,4 @@
-""""
+'''
 #7. Reverse Integer
 
 Difficulty: Medium
@@ -21,7 +21,7 @@ Output: 21
 
 Constraints:
 -2^31 <= x <= 2^31 - 1
-""""
+'''
 
 class Solution:
     def reverse(self, x: int) -> int:

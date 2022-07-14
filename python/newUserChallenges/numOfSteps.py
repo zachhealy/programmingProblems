@@ -1,4 +1,4 @@
-""""
+'''
 1342. Number of Steaps to Reduce a Number to Zero
 
 Difficulty: Easy
@@ -32,7 +32,7 @@ Output: 12
 
 Constraints:
 0 <= num <= 106
-""""
+'''
 
 class Solution:
     def numberOfSteps(self, num: int) -> int:
