@@ -1,6 +1,6 @@
-leetcodeProblems
+programmingProblems
 ===========================  
-A repo for me to store LeetCode problems I've completed/am working on.
+A repo for me to store programming problems I've completed/am working on.
 -------------------------- 
 Languages I'm Practicing: 
 * Python
