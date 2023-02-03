@@ -11,3 +11,12 @@ EXAMPLE
 Input: "Mr John Smith ", 13 Output: "Mr%20John%20Smith"
 
 '''
+def URLify(str):
+    for i in range(len(str)):
+        if str[i] == ' ':
+            str = str.replace(str[i], '%20')
+    return str
+
+
+test = "Mr John Smith"
+print(URLify(test))
