@@ -21,10 +21,29 @@ N is an integer within the range [0..200,000];
 string S is made only of the following characters: "(", "{", "[", "]", "}" and/or ")".
 '''
 def solution(S):
-    
-    
-    return 0
+    if len(S) == 0:
+        return 1
 
-def main():
-    
-    return 0
+    stack = []
+
+    for char in S:
+        if char == '(':
+            stack.append(')')
+        elif char == '[':
+            stack.append(']')
+        elif char == '{':
+            stack.append('}')
+        elif char == ')' or char == ']' or char == '}':
+            if not stack:
+                return 0
+            else:
+                temp = stack.pop() 
+                if temp != char:
+                    return 0
+    if stack:
+        return 0
+    else:
+        return 1
+
+
+print(solution('[{][]'))
