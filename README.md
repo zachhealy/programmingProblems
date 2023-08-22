@@ -9,4 +9,5 @@ Languages I'm Practicing:
 
 
 [My LeetCode Profile](https://leetcode.com/zachhealy/)
+
 [My HackerRank Profile](https://www.hackerrank.com/zachjhealy)
